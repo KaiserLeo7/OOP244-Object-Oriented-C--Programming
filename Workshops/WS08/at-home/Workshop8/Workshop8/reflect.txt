@@ -1,0 +1,24 @@
+1. What is the difference between an abstract base class and a concrete class?
+
+An abstract class is a class for which one or more methods are declared but not defined,
+ meaning that the compiler knows these methods are part of the class,
+ but not what code to execute for that method.
+
+A concrete class can be instantiated because it provides (or inherits) the implementation 
+for all of its methods. 
+
+2. Take a look to the main module—how is it possible that this module can work with 
+chequing and savings accounts but doesn’t know about the SavingsAccount or ChequingAccount classes?
+ 
+could be because theyre all part of iAccount hierarchy.
+
+3. Note that the interface has a destructor, even if doesn’t store any attributes. 
+Why is that destructor necessary?
+
+Necessary to prevent memory leaks
+
+4. In the context of a hierarchy of classes, what is the difference between overloading, overriding and shadowing? 
+
+Overloading is creating a function with the same identifier as another but a different signature
+Overriding is redefining a function
+Shadowing is when you redefine a function in a class heirarchy, but can still refer to other definitions that are defined in other levels of your heirarchy
